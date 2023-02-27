@@ -1,0 +1,180 @@
+body {
+  background: #eddccd;
+  color: #866124;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Old Standard TT", sans-serif;
+}
+
+.welcome-section h1 {
+  color: #ffffff;
+}
+
+.call-to-action h1 {
+  align-self: center;
+}
+
+.card .typografy {
+  font-family: "Oxygen", sans-serif;
+  background-color: #fffbf6;
+}
+
+.welcome-section {
+  background-image: url("/images/depositphotos_wooden-house.jpg");
+  text-align: center;
+  padding: 15% 30%;
+  /* background: #eddccd; */
+  display: -webkit-inline-box;
+}
+
+.link-style {
+  color: #866124;
+  text-decoration: none;
+}
+
+.link-style:hover {
+  font-weight: 700;
+  text-shadow: gray;
+}
+
+
+.navigation-bar {
+  background-color: #eddccd;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+
+.logo {
+  margin-left: 3%;
+}
+
+.navbar-items {
+  display: flex;
+  margin-right: 10%;
+}
+
+.navbar-item {
+  margin: 3%;
+}
+
+.title-background {
+  background-color: black;
+  opacity: 60%;
+  width: fit-content;
+  padding: 4% 3%;
+
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  background-color: #fffbf6;
+}
+
+.card {
+  margin: 2%;
+  text-align: left;
+}
+
+.date-checker{
+  text-align: center;
+  padding: 10% 30%;
+}
+
+.availability-message {
+  text-align: justify;
+}
+
+.call-to-action {
+  background-color: #fffbf6;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  align-self: center;
+}
+
+.foto-flower {
+  width: 200px;
+  height: 200px;
+  background-color: #866124;
+  margin-right: 20%;
+}
+
+footer {
+  text-align: center;
+  position:relative;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.main-pages {
+  background-color: #fffbf6;
+  padding-top: 4%;
+}
+
+/************************
+Slides with pictures and description
+***********/
+
+.slide {
+  width: 100%;
+  justify-content: center;
+}
+
+.even-slide {
+  padding: 5% 0;
+  background-color: #eddccd;
+}
+
+.odd-slide {
+  padding: 5% 0;
+  background-color: #fffbf6;
+}
+
+.picture-section {
+  margin: 5% 0;
+  justify-content: center;
+  display: flex;
+  padding: 0 10%;
+}
+
+.description-section {
+  background-color: #fffbf6;
+  margin: 7% 0;
+  display: flex;
+}
+
+.odd-slide .description-section {
+  background-color: #eddccd;
+}
+
+.slide p {
+  align-self: center;
+  padding: 6%;
+}
+
+.slide img {
+  width: 500px;
+  height: 350px;
+}
+
+/**********************
+
+***********************/
+
+.card img {
+  width: 300px;
+  height: 200px;
+}
+
+.card p {
+  padding: 0;
+}
