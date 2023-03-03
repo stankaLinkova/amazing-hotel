@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className="main-pages">
+        <div className="page-description">
         <h1>Contact</h1>
         <p>Mail: email@email.com</p>
         <p>Mobile: 123456789</p>

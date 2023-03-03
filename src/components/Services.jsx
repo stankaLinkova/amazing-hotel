@@ -1,11 +1,16 @@
-import CardService from "./CardService.jsx"
+import CardService from "./CardService.jsx";
+import { services } from "../assets/data.js";
 
-function Services() {
+function Services(props) {
     return (
         <div className="services-cards">
-            <CardService />
-            <CardService />
-            <CardService />
+        {services.map(item => 
+            <CardService 
+                key={item.id}
+                title={item.title}
+                description={item.description}
+                img={item.img}
+            /> )}
         </div>
     ) 
 }

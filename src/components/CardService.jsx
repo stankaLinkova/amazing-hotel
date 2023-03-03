@@ -1,14 +1,13 @@
 import * as React from 'react';
 
-function CardService() {
+function CardService(props) {
     return (
         <div className="card">
-            <img src="/images/cosy-apartment.jpg" alt="cosy-apartment" />
+            <img src={props.img} alt={props.title} />
             <div className="typografy">
-               <h2>Lizard</h2>
+               <h2>{props.title}</h2>
                <p>
-                 Lizards are a widespread group of squamate reptiles, with over 6,000
-                 species, ranging across all continents except Antarctica
+                 {props.description}
                </p>
             </div>
          </div>

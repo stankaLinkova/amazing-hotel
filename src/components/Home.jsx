@@ -5,7 +5,7 @@ import CallToAction from "./CallToAction.jsx";
 
 function Home() {
     return (
-      <div>
+      <div className="home">
         <Welcome />
         <Services />
         <DateChecker />
