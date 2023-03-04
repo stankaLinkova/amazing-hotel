@@ -1,6 +1,10 @@
 import WhatToDo from "./WhatToDo";
 import { rooms } from "../assets/data.js";
 
+import WifiIcon from '@mui/icons-material/Wifi';
+import HotelIcon from '@mui/icons-material/Hotel';
+import TvIcon from '@mui/icons-material/Tv';
+
 
 function Rooms() {
     return (
@@ -13,6 +17,11 @@ function Rooms() {
                     litora ultricies a lorem ornare. Orci senectus ultricies, laoreet eu aliquam fames pretium. Ligula netus, rutrum placerat sed. 
                     Convallis eget nisi, quam interdum luctus vivamus. Sagittis habitasse adipiscing, ullamcorper placerat posuere imperdiet habitant.
                 </p>
+                <div>
+                    <WifiIcon fontSize="large" sx={{color: "#866124", margin: "2%"}} />
+                    <HotelIcon fontSize="large" sx={{color: "#866124", margin: "2%"}} />
+                    <TvIcon fontSize="large" sx={{color: "#866124", margin: "2%"}} />
+                </div>
             </div>
 
             <WhatToDo items={rooms} />

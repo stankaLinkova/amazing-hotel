@@ -1,26 +1,34 @@
-
+import { useState } from "react";
 import TextField from '@mui/material/TextField';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
-let value = "";
-function handleChange() {
-
-}
 
 function DateChecker() {
+
+    const newDateTime = new Date();
+    const currentDate = newDateTime.toLocaleString('en-GB', { timeZone: 'UTC' }).split(',')[0];
+
+    const [date, setDate] = useState(currentDate)
+
+    function handleChange(value) {
+      setDate(value);
+    }
+
     return (
         <div className="date-checker">
+        <h1>Check available dates!</h1>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DesktopDatePicker
+        <DatePicker
           label="Date desktop"
-          inputFormat="MM/DD/YYYY"
-          value={value}
+          inputFormat="DD/MM/YYYY"
+          value={date}
           onChange={handleChange}
           renderInput={(params) => <TextField {...params} />}
         />
          </LocalizationProvider>
+
          <p className="availability-message">
          Quis et dictumst, porta enim, nec per lacus etiam dolor tempus. 
          Per vitae tempus, ad nec habitant mollis varius. Himenaeos quam per, fringilla vehicula, risus eleifend class 

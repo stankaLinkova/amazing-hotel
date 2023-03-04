@@ -2,7 +2,7 @@ import ImgSlide from "./ImgSlide";
 
 function WhatToDo(props) {
 
-    function fillImgSlide(item) {
+    function fillImgSlide(item, idx) {
       let section = '';
       if (item.sectionNumber === 0) {
         section = "odd" 
@@ -13,6 +13,7 @@ function WhatToDo(props) {
       return (
         <ImgSlide 
             key={item.id}
+            id={item.id}
             sectionNumber={section} 
             title={item.title} 
             description={item.description}
@@ -23,7 +24,7 @@ function WhatToDo(props) {
 
     return (
         <div>
-            {props.items.map(item => fillImgSlide(item) )}
+            {props.items.map((item, idx) => fillImgSlide(item, idx) )}
         </div>
     )
 }

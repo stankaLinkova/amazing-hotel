@@ -27,13 +27,11 @@ h1 {
 
 footer {
   text-align: center;
-  /* position: fixed; */
-  color: black;
+  color: #866124;
   font-weight: 400;
   left:0;
   bottom:0;
   right:0;
-  z-index: 10;
 }
 
 /************************
@@ -42,8 +40,8 @@ NAVIGATION BAR
 
 .link-style {
   /* color: #866124; */
-  color: black;
-  font-size: 30px;
+  /* color: black; */
+  font-size: 24px;
   text-decoration: none;
 }
 
@@ -57,9 +55,8 @@ NAVIGATION BAR
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: white;
-  /* margin: 1% 0; */
   z-index: 1;
   width: 100%;
   height: 10%;
@@ -67,6 +64,7 @@ NAVIGATION BAR
 
 .logo {
   margin-left: 3%;
+  align-self: center;
 }
 
 .navbar-items {
@@ -175,6 +173,8 @@ HOME PAGE
 
 .call-to-action h1 {
   align-self: center;
+  padding: 8% 10%;
+  font-size: 50px;
 }
 
 .call-to-action {
@@ -199,7 +199,15 @@ OTHER PAGES
 
 .page-description {
   background-color: #fffbf6;
-  padding: 5% 10%;
+  padding: 8% 10% 5%;
+}
+
+.contact{
+  height: 65vh;
+}
+
+.whatToDo {
+  padding-top: 8%;
 }
 
 /***
@@ -208,7 +216,6 @@ Slides with pictures and description
 
 .slide {
   width: 100%;
-  justify-content: center;
 }
 
 .even-slide {

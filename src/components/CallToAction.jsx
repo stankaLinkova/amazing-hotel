@@ -1,8 +1,7 @@
 function CallToAction() {
     return (
     <div className="call-to-action">
-            <div className="foto-flower">FOTO</div>
-            <h1>Come and enjoy!</h1>
+            <h1>COME AND ENJOY!</h1>
         </div>
     )
 }
