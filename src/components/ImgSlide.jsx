@@ -1,7 +1,8 @@
 function ImgSlide(props) {
+
   return (
     <div className="slide">
-        <div className={props.sectionNumber + "-slide"}>
+        <div className={props.sectionNumber + "-slide"} style={props.id === 1 ? {padding: "8% 0 5%"} : null}>
             <h1>{props.title}</h1>
             <div className="picture-section">
                 {props.sectionNumber === "even" && 

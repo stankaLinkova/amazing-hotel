@@ -3,7 +3,7 @@ export default function Welcome() {
     <div className="welcome-section">
       <img 
         className="welcome-bg"
-        src="/images/depositphotos_wooden-house.jpg"
+        src="/images/wooden-house.png"
         alt="wooden cottage"
       />
 

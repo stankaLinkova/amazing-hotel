@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import RoofingIcon from '@mui/icons-material/Roofing';
 
-const pages = ['contact', 'rooms', 'restaurant', 'trips', 'home'];
+const pages = ['home', 'rooms', 'restaurant', 'trips', 'contact'];
 
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
